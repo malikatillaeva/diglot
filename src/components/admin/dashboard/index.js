@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import { DashboardContainer, DashboardMenuBars, Icon, DashboardMenu, DashboardMenuItems, DashboardToggle, CloseIcon, MenuText, MenuIcons, MenuTitle} from './DashboardElements'
 import { DashboardData } from './DashboardData'
-import {IconContext } from 'react-icons'
+import { IconContext } from 'react-icons'
 
 function Dashboard() {
     const [sidebar, setSidebar] = useState(false)

@@ -4,7 +4,8 @@
   "info": {
     "singularName": "course",
     "pluralName": "courses",
-    "displayName": "Course"
+    "displayName": "Course",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,14 +16,31 @@
       "type": "string",
       "required": true
     },
-    "startDate": {
-      "type": "datetime"
-    },
     "students": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::student.student",
       "mappedBy": "courses"
+    },
+    "duration": {
+      "type": "string"
+    },
+    "description1": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "description2": {
+      "type": "text"
     }
   }
 }
